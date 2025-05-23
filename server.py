@@ -14,7 +14,7 @@ def handle_client(client_socket, client_address):
         print(f"[-] Koneksi dengan {client_address} ditutup.")
 
 server_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-server_socket.bind(('localhost', 12345))
+server_socket.bind(('172.16.49.109', 12345))
 server_socket.listen(5)
 
 print("[*] Server aktif, menunggu koneksi di port 12345... ")
