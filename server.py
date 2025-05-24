@@ -6,7 +6,7 @@ def handle_client(client_socket, client_address):
     try:
         data = client_socket.recv(1024).decode()
         print(f"[{client_address}] Pesan: {data}")
-        client_socket.send("Halo kenalan yuk!".encode())
+        client_socket.send("Halo client_2!".encode())
     except Exception as e:
         print(f"[!] Error dengan {client_address}: {e}")
     finally:
